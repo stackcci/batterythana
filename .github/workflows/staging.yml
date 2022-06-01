@@ -1,3 +1,4 @@
+# https://alphaparticle.com/blog/automating-ftp-deployments-with-github-actions/
 name: Staging Deploy
 on:
   push:
