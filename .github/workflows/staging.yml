@@ -1,0 +1,16 @@
+name: Staging Deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    name: FTP Deploy (Staging)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: git-ftp push
+      uses: sebastianpopp/git-ftp-action@releases/v3
+      with:
+        url: "ftp://119.59.125.132/domains/batterythana.com/public_html/dev/"
+        user: thana
+        password: noname#Th21
