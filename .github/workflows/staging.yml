@@ -11,6 +11,6 @@ jobs:
     - name: git-ftp push
       uses: sebastianpopp/git-ftp-action@releases/v3
       with:
-        url: "ftp://119.59.125.132/domains/batterythana.com/public_html/dev/"
+        url: "ftp://119.59.125.132/domains/batterythana.com/public_html/uat/"
         user: thana
         password: noname#Th21
