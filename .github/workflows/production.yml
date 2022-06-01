@@ -1,0 +1,16 @@
+name: Production Deploy
+on:
+  release:
+    types: [published]
+jobs:
+  deploy:
+    name: FTP Deploy (Production)
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: git-ftp push
+      uses: sebastianpopp/git-ftp-action@releases/v3
+      with:
+        url: "ftp://119.59.125.132/domains/batterythana.com/public_html/"
+        user: thana
+        password: noname#Th21
