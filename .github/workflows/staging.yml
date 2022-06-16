@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: git-ftp push
-      uses: stackcci/git-ftp-action@releases/v1.0.0
+      uses: stackcci/git-ftp-action@1.0.0
       with:
         url: "ftp://119.59.125.132/domains/batterythana.com/public_html/dev/"
         user: thana
